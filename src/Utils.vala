@@ -72,7 +72,7 @@ namespace CpuFreqApplet {
             string stdout;
             string stderr;
             int status;
-            string cli_path = "pkexec /usr/lib/budgie-desktop/plugins/budgie-cpufreq-applet/budgie-cpufreq-modifier ";
+            string cli_path = "pkexec " + Config.PACKAGE_LIBDIR +"/budgie-cpufreq-modifier ";
             string cmd = cli_path + cmd_par;
 
             try {

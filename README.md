@@ -15,7 +15,7 @@ vala
 gtk+-3.0 >= 3.18
 budgie-1.0 >= 2
 glib-2.0 >= 2.46.0
-libpeas-1.0 >= 1.8.0
+libpeas-2 >= 2.0.0
 gobject-2.0
 polkit-gobject-1
 ```

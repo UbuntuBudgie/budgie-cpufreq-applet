@@ -1,5 +1,12 @@
 vala_compiler = meson.get_compiler('vala')
 
+ValaArgs = [
+    '--pkg=config',
+    '--vapidir=' + VAPI_DIR,
+    '--target-glib=2.38',
+]
+
+
 bcfa_sources = [
     'CpuFreqApplet.vala',
     'Utils.vala',
@@ -18,10 +25,12 @@ bcfa_deps = [
 
 shared_library('budgiecpufreqapplet',
     bcfa_sources,
+    vala_args: ValaArgs,
     dependencies: [
         bcfa_deps,
         vala_compiler.find_library('posix'),
     ],
+    include_directories: config_inc_dir,
     install: true,
     install_dir: LIB_INSTALL_DIR,
 )
