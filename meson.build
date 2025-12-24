@@ -25,7 +25,7 @@ add_project_arguments(
 dep_gtk3 = dependency('gtk+-3.0', version: '>=3.18')
 dep_glib = dependency('glib-2.0', version: '>= 2.46.0')
 dep_peas = dependency('libpeas-2', version: '>= 2.0.0')
-dep_budgie = dependency('budgie-2.0', version: '>= 2')
+dep_budgie = dependency('budgie-3.0', version: '>= 3')
 dep_gobject = dependency('gobject-2.0')
 dep_polkit = dependency('polkit-gobject-1')
 
